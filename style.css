@@ -13,7 +13,7 @@ body {
 
     /* ДОБАВЛЯЕМ ФОН ПЛЯЖА — ВСТАВЬ ЭТОТ БЛОК */
     background-image: linear-gradient(rgba(240, 248, 255, 0.8), rgba(240, 248, 255, 0.8)), /* Светлый слой поверх фона для читаемости */
-                      url('img/back.jpg'); /* Путь к твоему файлу */
+                      url('back.jpg'); /* Путь к твоему файлу */
     background-size: cover;    /* Фон растягивается на весь экран */
     background-position: center; /* Центрируем фон */
     background-attachment: fixed; /* Фон не прокручивается (красивый эффект) */
