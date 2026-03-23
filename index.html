@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Залив сувениров</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/web6.jpg" alt="Логотип" class="logo-img">
+                </a>
+            </div>
+            <nav>
+    <ul>
+        <li><a href="#catalog">Каталог</a></li>
+        <li><a href="#map">Местоположение</a></li> </ul>
+    <div class="cart-status" id="open-cart">
+        🛒 Корзина: <span id="cart-count">0</span>
+    </div>
+</nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Уникальные сувениры</h2>
+                <a href="#catalog" class="btn-catalog">В каталог</a>
+            </div>
+        </section>
+
+        <section id="catalog" class="catalog">
+            <h2 class="section-title">Наши сувениры</h2>
+            <div class="product-grid" id="product-grid">
+                </div>
+        </section>
+    </main>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" id="close-cart-btn">&times;</span>
+            <h2>Ваша корзина</h2>
+            <div id="cart-items-list"></div>
+            <hr>
+            <div class="cart-total"><strong>Итого: <span id="total-price">0</span> ₽</strong></div>
+            <button class="buy-btn" id="send-tg-btn">Оформить через Tg</button>
+        </div>
+    </div>
+
+    <section class="map-section">
+    <div class="container"><section id="map" class="map-section"> <div class="container">
+        <h2 class="section-title">Мы на карте</h2>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2737.5684523825833!2d132.176465476837!3d43.35128747111812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5fb6b042abc1419f%3A0xf404b9ac24c9a864!2z0JrQvtC-0L_QtdGA0LDRgtC40LLQvdCw0Y8g0YPQu9C7LiwgNiwg0JDRgNGC0ZHRvCwg0J_RgNC40LzQvtGA0YHQutC40Lkg0LrRgNCw0LksIDY5Mjc2MA!5e0!3m2!1sru!2sru!4v1711200000000!5m2!1sru!2sru" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+</section>
+    <script src="script.js"></script>
+</body>
+</html>
