@@ -1,10 +1,9 @@
 const products = [
-    { id: 1, title: "Сумка 'Морской узел'", price: 1200, img: "img/Web1.jpg" },
-    { id: 2, title: "Чехол 'Морской узел'", price: 800, img: "img/Web2.jpg" },
-    { id: 3, title: "Футболка 'Морской узел'", price: 900, img: "img/Web4.jpg" },
-    { id: 4, title: "Кепка 'Морской узел'", price: 750, img: "img/cap.jpg" }
+    { id: 1, title: "Сумка 'Морской узел'", price: 1200, img: "Web1.jpg" },
+    { id: 2, title: "Чехол 'Морской узел'", price: 800, img: "Web2.jpg" },
+    { id: 3, title: "Футболка 'Морской узел'", price: 900, img: "Web4.jpg" },
+    { id: 4, title: "Кепка 'Морской узел'", price: 750, img: "cap.jpg" }
 ];
-
 let cart = [];
 
 // Функция отрисовки товаров
