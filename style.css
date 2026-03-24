@@ -13,7 +13,7 @@ body {
 
     /* ДОБАВЛЯЕМ ФОН ПЛЯЖА — ВСТАВЬ ЭТОТ БЛОК */
     background-image: linear-gradient(rgba(240, 248, 255, 0.8), rgba(240, 248, 255, 0.8)), /* Светлый слой поверх фона для читаемости */
-                      url('back.jpg'); /* Путь к твоему файлу */
+                      url('img/back.jpg'); /* Путь к твоему файлу */
     background-size: cover;    /* Фон растягивается на весь экран */
     background-position: center; /* Центрируем фон */
     background-attachment: fixed; /* Фон не прокручивается (красивый эффект) */
@@ -82,7 +82,7 @@ nav ul li a:hover {
     background: transparent;
     color: #0077b6;
     padding: 10px 20px;
-    border: 2px solid #ee9b00;
+    border: 2px solid #005fee;
     border-radius: 25px;
     font-weight: bold;
     font-size: 15px;
@@ -95,14 +95,14 @@ nav ul li a:hover {
 }
 
 .cart-status:hover {
-    background-color: #ee9b00;
+    background-color: #0053ee;
     color: white;
     box-shadow: 0 4px 10px rgba(238, 155, 0, 0.3);
 }
 
 #cart-count {
     background-color: rgba(238, 155, 0, 0.1);
-    color: #ee9b00;
+    color: #0400ee;
     padding: 2px 6px;
     border-radius: 10px;
     font-size: 13px;
@@ -111,7 +111,7 @@ nav ul li a:hover {
 
 .cart-status:hover #cart-count {
     background-color: white;
-    color: #ee9b00;
+    color: #0400ee;
 }
 
 /* 3. ГЛАВНЫЙ БЛОК (HERO) */
@@ -215,7 +215,7 @@ nav ul li a:hover {
 .buy-btn {
     width: 100%;
     padding: 12px;
-    background-color: #ee9b00;
+    background-color: #3400ee;
     color: white;
     border: none;
     border-radius: 5px;
@@ -327,3 +327,70 @@ nav ul li a:hover {
 .map-container iframe:hover {
     filter: grayscale(0); /* Карта становится яркой при наведении */
 }
+/* Стили для курсовой */
+.about-section, .reviews-section {
+    padding: 60px 10%;
+    background: rgba(255, 255, 255, 0.9);
+    margin: 20px 0;
+    border-radius: 20px;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.review-card {
+    background: #fff;
+    padding: 20px;
+    border-left: 5px solid #0018ee;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.review-card span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #005f73;
+}
+/* КУРСОВАЯ: Пункт 3.1 Стилистика */
+.about-section {
+    padding: 60px 10%;
+    background: #fff;
+    margin: 40px 0;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.product-story {
+    font-size: 0.9em;
+    color: #666;
+    font-style: italic;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+
+.hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    background: #001219;
+    color: white;
+    margin-top: 50px;
+}
+
+/* Остальные стили из твоего файла (header, hero, product-card) оставь как были */
