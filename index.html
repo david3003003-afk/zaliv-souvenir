@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Залив сувениров</title>
+    <title>Залив сувениров — Мастерская Приморских подарков</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,62 +12,76 @@
         <div class="header-container">
             <div class="logo">
                 <a href="index.html">
-                    <img src="web6.jpg" alt="Логотип" class="logo-img">
+                    <img src="img/web6.jpg" alt="Залив Сувениров" class="logo-img">
                 </a>
             </div>
             <nav>
-    <ul>
-        <li><a href="#catalog">Каталог</a></li>
-        <li><a href="#map">Местоположение</a></li> </ul>
-    <div class="cart-status" id="open-cart">
-        🛒 Корзина: <span id="cart-count">0</span>
-    </div>
-</nav>
+                <ul>
+                    <li><a href="#catalog">Каталог</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#map">Где мы</a></li>
+                </ul>
+                <div class="cart-status" id="open-cart">
+                    🛒 Корзина: <span id="cart-count">0</span>
+                </div>
+            </nav>
         </div>
     </header>
 
     <main>
         <section class="hero">
             <div class="hero-content">
-                <h2>Уникальные сувениры</h2>
-                <a href="#catalog" class="btn-catalog">В каталог</a>
+                <h1>Легенды Приморья в каждом сувенире</h1>
+                <p>Ручная работа из натуральных материалов: кедр, глина, морская душа.</p>
+                <a href="#catalog" class="btn-catalog">Смотреть коллекцию</a>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title">О мастерской</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>«Залив Сувениров» — это не просто магазин. Это попытка сохранить энергетику Японского моря в вещах, которые вы держите в руках. Мы используем локальные материалы: приморский кедр, натуральную глину и металл.</p>
+                        <p>Каждое изделие проходит через руки мастера, обретая свою уникальную историю и характер.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="catalog" class="catalog">
-            <h2 class="section-title">Наши сувениры</h2>
-            <div class="product-grid" id="product-grid">
-                </div>
+            <div class="container">
+                <h2 class="section-title">Наши сувениры</h2>
+                <div class="product-grid" id="product-grid">
+                    </div>
+            </div>
         </section>
     </main>
 
     <div id="cart-modal" class="modal">
         <div class="modal-content">
-            <span class="close-modal" id="close-cart-btn">&times;</span>
+            <span class="close-modal" id="close-cart-btn">×</span>
             <h2>Ваша корзина</h2>
             <div id="cart-items-list"></div>
             <hr>
             <div class="cart-total"><strong>Итого: <span id="total-price">0</span> ₽</strong></div>
-            <button class="buy-btn" id="send-tg-btn">Оформить через Tg</button>
+            <button class="buy-btn" id="send-tg-btn">Оформить через WhatsApp/Tg</button>
         </div>
     </div>
 
-    <section class="map-section">
-    <div class="container"><section id="map" class="map-section"> <div class="container">
-        <h2 class="section-title">Мы на карте</h2>
-        <div class="map-container">
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2737.5684523825833!2d132.176465476837!3d43.35128747111812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5fb6b042abc1419f%3A0xf404b9ac24c9a864!2z0JrQvtC-0L_QtdGA0LDRgtC40LLQvdCw0Y8g0YPQu9C7LiwgNiwg0JDRgNGC0ZHRvCwg0J_RgNC40LzQvtGA0YHQutC40Lkg0LrRgNCw0LksIDY5Mjc2MA!5e0!3m2!1sru!2sru!4v1711200000000!5m2!1sru!2sru" 
-                width="100%" 
-                height="450" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+    <section id="map" class="map-section">
+        <div class="container">
+            <h2 class="section-title">Найти нас в Артёме</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2737.5684523825833!2d132.17646547683713!3d43.35128747111812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5fb6b42abc1419ff%3A0x484b9ac24c9a864!2z0JrQvtC-0L_QtdGA0LDRgtC40LLQvdCw0Y8g0YPQu9C7LiwgNiwg0JDRgNGC0LXQvCwg0J_RgNC40LzQvtGA0YHQutC40Lkg0LrRgNCw0LksIDY5Mjc2MA!5e0!3m2!1sru!2sru!4v1711200000000!5m2!1sru!2sru" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <footer>
+        <p>© 2026 Мастерская «Залив Сувениров». Курсовая работа Раченковой М.В.</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
