@@ -393,4 +393,76 @@ footer {
     margin-top: 50px;
 }
 
+/* --- АДАПТАЦИЯ ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ --- */
+
+@media (max-width: 768px) {
+    /* 1. Настройка сетки каталога */
+    .product-grid {
+        /* Делаем по 1 или 2 карточки в ряд (зависит от ширины) */
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        gap: 15px;
+        padding: 10px;
+    }
+
+    /* 2. Уменьшаем карточку товара для экономии места */
+    .product-card {
+        padding: 10px;
+    }
+
+    .product-card h3 {
+        font-size: 1rem; /* Чуть меньше заголовок */
+        min-height: auto;
+    }
+
+    .product-story {
+        font-size: 0.8rem; /* Описание помельче */
+        display: -webkit-box;
+        -webkit-line-clamp: 3; /* Ограничиваем текст 3 строками, чтобы карточки были ровные */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    /* 3. Шапка сайта (Header) */
+    header {
+        padding: 10px 5%;
+    }
+
+    .header-container {
+        flex-direction: column; /* Логотип и меню друг под другом */
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-wrap: wrap; /* Если ссылки не влезут, перенесутся */
+        justify-content: center;
+        gap: 10px;
+    }
+
+    /* 4. Главный баннер (Hero) */
+    .hero {
+        height: 50vh; /* Уменьшаем высоту на мобилках */
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    /* 5. Модальное окно корзины */
+    .modal-content {
+        width: 95%; /* Почти на весь экран */
+        margin: 10% auto;
+        padding: 15px;
+    }
+}
+
+/* Дополнительная правка для совсем маленьких экранов (до 480px) */
+@media (max-width: 480px) {
+    .product-grid {
+        grid-template-columns: 1fr; /* Строго по одному товару в ряд */
+    }
+    
+    .logo-img {
+        height: 60px; /* Уменьшаем лого, чтобы не занимало пол-экрана */
+    }
+}
 /* Остальные стили из твоего файла (header, hero, product-card) оставь как были */
