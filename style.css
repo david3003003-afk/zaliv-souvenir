@@ -11,15 +11,17 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
 
-    /* Фон: сначала градиент-затемнение, потом сама картинка */
-    background-image: 
-        linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
-        url('');
+    /* Новая картинка фона */
+    background-image: url('logotip.jpg'); /* Путь к новому файлу */
     
-    background-attachment: scroll; /* Листается! */
-    background-repeat: repeat;    /* Повторяется! */
-    background-size: 300px;       /* Размер ракушек */
-    background-position: top center;
+    /* Делаем её "неподвижной" на весь экран */
+    background-size: cover;          /* Фон растягивается, заполняя всё пространство */
+    background-attachment: fixed;    /* Красивый эффект: фон стоит, контент едет */
+    background-position: center top; /* Выравниваем по верху и центру */
+    background-repeat: no-repeat;    /* Не повторяем, так как это рамка */
+    
+    background-color: #ffffff; /* Запасной белый цвет, если картинка не загрузилась */
+    
     margin: 0;
 }
 
