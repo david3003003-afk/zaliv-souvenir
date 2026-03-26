@@ -14,7 +14,7 @@ body {
     /* Фон: сначала градиент-затемнение, потом сама картинка */
     background-image: 
         linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
-        url('shells-bg.jpg');
+        url('');
     
     background-attachment: scroll; /* Листается! */
     background-repeat: repeat;    /* Повторяется! */
