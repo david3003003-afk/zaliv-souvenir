@@ -9,14 +9,19 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: #333;
     line-height: 1.6;
-    overflow-x: hidden; /* Защита от горизонтальной прокрутки */
+    overflow-x: hidden;
 
-    /* ДОБАВЛЯЕМ ФОН ПЛЯЖА — ВСТАВЬ ЭТОТ БЛОК */
-    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('shells-bg.jpg'); /* Светлый слой поверх фона для читаемости *//* Путь к твоему файлу */
-    background-size: cover;    /* Фон растягивается на весь экран */
-    background-position: center; /* Центрируем фон */
-    background-attachment: fixed; /* Фон не прокручивается (красивый эффект) */
-    background-repeat: no-repeat;
+    /* ПРАВИЛЬНЫЙ БЛОК С ФОНОМ */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('shells-bg.jpg');
+    
+    /* Чтобы фон листался вместе с текстом: */
+    background-attachment: scroll; 
+    
+    /* Чтобы ракушки не растягивались на весь экран, а сохраняли свой узор: */
+    background-repeat: repeat;
+    background-size: 400px; /* Можно менять это значение (напр. 300px или 500px), чтобы ракушки были мельче или крупнее */
+    
+    background-position: top center;
 }
 
 /* 2. ШАПКА (HEADER) — Сделали "Красиво" */
