@@ -12,7 +12,7 @@ body {
     overflow-x: hidden;
 
     /* ПРАВИЛЬНЫЙ БЛОК С ФОНОМ */
-    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('shells-bg.jpg');
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('shells.jpg');
     
     /* Чтобы фон листался вместе с текстом: */
     background-attachment: scroll; 
