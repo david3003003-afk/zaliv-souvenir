@@ -12,8 +12,7 @@ body {
     overflow-x: hidden; /* Защита от горизонтальной прокрутки */
 
     /* ДОБАВЛЯЕМ ФОН ПЛЯЖА — ВСТАВЬ ЭТОТ БЛОК */
-    background-image: linear-gradient(rgba(240, 248, 255, 0.8), rgba(240, 248, 255, 0.8)), /* Светлый слой поверх фона для читаемости */
-                      url('back.jpg'); /* Путь к твоему файлу */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('shells-bg.jpg'); /* Светлый слой поверх фона для читаемости *//* Путь к твоему файлу */
     background-size: cover;    /* Фон растягивается на весь экран */
     background-position: center; /* Центрируем фон */
     background-attachment: fixed; /* Фон не прокручивается (красивый эффект) */
