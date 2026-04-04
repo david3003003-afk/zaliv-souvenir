@@ -12,7 +12,7 @@ body {
     overflow-x: hidden;
 
     /* ФОН САЙТА */
-    background-image: url('backgr.jpg'); /* Твое новое фото фона */
+    background-image: url('backgr1.jpg'); /* Твое новое фото фона */
     background-size: cover; /* Растягивает фото на весь экран */
     background-attachment: fixed; /* Фон не прокручивается вместе с контентом */
     background-position: center;
